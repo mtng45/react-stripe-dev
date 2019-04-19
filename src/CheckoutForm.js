@@ -16,7 +16,7 @@ class CheckoutForm extends Component {
       headers: {'Content-Type': 'text/plain'},
       body: token.id
     });
-  
+
     if (response.ok) this.setState({ complete: true })
   }
 
