@@ -1,4 +1,4 @@
-# Step 3: Create a token to securely transmit card information
+# [Step 3: Create a token to securely transmit card information](https://stripe.com/docs/recipes/elements-react#create-token)
 この時点で、アプリケーションはカード入力フォームを表示できます。次のステップでは、CheckoutFormコンポーネントの送信メソッドに機能を追加して、[購入]ボタンをクリックしてカード情報をトークン化してサーバーに送信します。
 
 ```javascript
