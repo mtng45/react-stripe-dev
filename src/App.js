@@ -5,9 +5,9 @@ import CheckoutForm from './CheckoutForm'
 class App extends Component {
   render() {
     return (
-      <StripeProvider apiKey="pk_test_WkhaW9iXFx1nOjUaATA4pb4z002ei40toD">
+      <StripeProvider apiKey={process.env.REACT_APP_STRIPE_API_KEY_PUBLIC}>
         <div className="example">
-          <h1>React Stripe Elements Example</h1>
+          <h1>Stripe Elements</h1>
           {/* ElementsにはinjectStripeでラップしたコンポーネントが含まれている必要がある */}
           <Elements>
             <CheckoutForm />
