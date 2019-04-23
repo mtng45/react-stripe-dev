@@ -1,5 +1,6 @@
+require('dotenv').config()
 const app = require('express')()
-const stripe = require('stripe')('sk_test_xYAPema1r9QDjVElzOvv0dPG00iDgzTRqa')
+const stripe = require('stripe')(process.env.REACT_APP_STRIPE_API_KEY_SECRET)
 
 app.use(require('body-parser').text())
 // 請求に対するPOSTリクエストハンドラー
